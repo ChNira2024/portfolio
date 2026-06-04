@@ -1,0 +1,76 @@
+npm install gh-pages --save-dev
+What is this command?
+1. gh-pages: This is an npm package
+
+It helps you:
+Take your React build folder
+Push it to a special branch (gh-pages)
+Publish it to GitHub Pages automatically
+
+2. --save-dev
+
+Means:
+Install as development dependency
+Not needed in production runtime
+So it goes into:
+
+"devDependencies": {
+  "gh-pages": "^6.3.0"
+}
+--------------------------------------------
+Why do you need it?
+Normally: You would manually Build project,Create branch,Copy files,Push to GitHub
+❌ Too much manual work
+
+✅ With gh-pages
+Just run: npm run deploy
+👉 It automatically:
+Runs build
+Creates gh-pages branch
+Pushes your site to GitHub
+
+Makes it live 🌍
+⚙️ How it connects to your project
+You added this:
+
+"scripts": {
+  "deploy": "gh-pages -d build"
+}
+👉 Means:
+Take build/ folder
+Deploy it
+📦 Real Flow (Important)
+npm run build   → creates build/
+npm run deploy  → pushes to gh-pages branch
+
+🧪 What happens in GitHub
+After deploy:
+👉 New branch created: gh-pages
+👉 That branch is used by GitHub Pages to host your site
+💡 Simple Analogy Think like this:
+
+React app = your source code
+build/ = final website
+gh-pages = hosting server
+gh-pages package = delivery boy 🚚
+
+⚠️ Without gh-pages?
+You’d have to:
+git checkout gh-pages
+copy build files
+commit
+push
+
+👉 npm install gh-pages --save-dev
+= installs a tool that automatically deploys your React app to GitHub Pages
+
+You can combine build + deploy:
+
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+
+Now just run:
+npm run deploy
+cleaner & professional
