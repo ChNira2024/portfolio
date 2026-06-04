@@ -1,0 +1,80 @@
+/* RESET */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+/* NAVBAR */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+  background: #020617;
+  position: sticky;
+  top: 0;
+}
+
+.nav h2 {
+  color: #38bdf8;
+}
+
+.nav a {
+  color: #cbd5f5;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #38bdf8;
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* HERO */
+#home {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+#home h1 {
+  font-size: 40px;
+  color: #38bdf8;
+}
+
+#home h3 {
+  color: #94a3b8;
+}
+
+/* CARDS */
+.card {
+  background: #1e293b;
+  padding: 20px;
+  margin: 20px auto;
+  width: 60%;
+  border-radius: 12px;
+  transition: 0.3s;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 0 25px rgba(56,189,248,0.4);
+}
+
+/* BUTTON LINKS */
+a {
+  color: #38bdf8;
+  font-weight: bold;
+}
+
+/* FOOTER */
+.footer {
+  background: #020617;
+  padding: 20px;
+}
