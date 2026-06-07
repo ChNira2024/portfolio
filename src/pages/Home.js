@@ -6,21 +6,46 @@ function Home() {
       <h1>Hi, I'm Niranjan Charty 👋</h1>
 
       <h3>
-        Java Full Stack Developer | Spring Boot | Microservices | AWS | Kubernetes | GenAI
+        Java Backend Developer | Spring Boot | Microservices | AWS | DevOps
       </h3>
 
       <p>
-        2.9 years of experience building scalable microservices and AI-powered solutions.
-        Improved API performance by 30% using Redis and built RAG pipelines for intelligent search.
+        Software Engineer with 2.9 years of experience in designing, developing,
+        and deploying scalable backend systems using Java, Spring Boot, and
+        Microservices architecture. Strong focus on performance optimization,
+        system reliability, and cloud-based deployments.
       </p>
 
-      <p style={{ marginTop: "20px", color: "#22c55e" }}>
-            ✔ Improved API performance by 30%  
-            ✔ Built RAG pipelines using Spring AI  
-            ✔ Deployed apps on AWS EKS with ArgoCD  
-       </p>
+      <p className="highlights">
+        ✔ Improved API performance by 30% using Redis caching <br />
+        ✔ Built and maintained RESTful microservices <br />
+        ✔ Worked on CI/CD pipelines and AWS deployments <br />
+        ✔ Implemented secure authentication using JWT <br />
+      </p>
 
-      <p><b>📍 Hyderabad | Available for Immediate Joining</b></p>
+      <p>
+        <b>📍 Hyderabad | Open to Backend / Full Stack opportunities</b>
+      </p>
+
+      {/* Resume Buttons */}
+      <div className="btn-group">
+        <a
+          href={`${process.env.PUBLIC_URL}/Niranjan_Charty_Java_Developer.pdf`}
+          target="_blank"
+          rel="noreferrer"
+          className="btn"
+        >
+          📄 View Resume
+        </a>
+
+        <a
+          href={`${process.env.PUBLIC_URL}/Niranjan_Charty_Java_Developer.pdf`}
+          download
+          className="btn-outline"
+        >
+          ⬇️ Download Resume
+        </a>
+      </div>
     </section>
   );
 }

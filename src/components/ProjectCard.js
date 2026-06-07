@@ -15,7 +15,6 @@
 //   );
 // }
 
-export default ProjectCard;
 function ProjectCard({ project }) {
   return (
     <div className="card">
@@ -24,7 +23,7 @@ function ProjectCard({ project }) {
       <p>{project.description}</p>
 
       <p style={{ color: "#94a3b8" }}>
-        <b>Tech:</b> {project.tech}
+        <b>Tech Stack:</b> {project.tech}
       </p>
 
       <a href={project.github} target="_blank" rel="noreferrer">
@@ -33,3 +32,5 @@ function ProjectCard({ project }) {
     </div>
   );
 }
+
+export default ProjectCard;

@@ -2,31 +2,53 @@ const projects = [
   {
     title: "RAG-Based Intelligent Assistant",
     description:
-      "Built end-to-end RAG pipeline using Spring AI, Ollama, and MariaDB Vector. Improved retrieval accuracy by 40%.",
-    tech: "Spring Boot, AI, Docker",
-    github: "https://github.com/ChNira2024/spring-ai-ollama-rag-mariadb-pipeline",
+      "Designed and implemented an end-to-end Retrieval-Augmented Generation (RAG) pipeline using Spring AI and vector database integration to improve contextual response accuracy.",
+    tech: "Java, Spring Boot, Spring AI, Ollama, MariaDB Vector, Docker",
+    github:
+      "https://github.com/ChNira2024/spring-ai-ollama-rag-mariadb-pipeline",
+    highlights: [
+      "Improved retrieval accuracy by 40%",
+      "Integrated vector search for semantic matching",
+      "Containerized application using Docker"
+    ]
   },
+
   {
-    title: "Owner's Association (Mashreq Bank)",
+    title: "Owner’s Association Payment System (Mashreq Bank)",
     description:
-      "Payment gateway integration with UAE APIs. Reduced failures by 40% and ensured 99.9% success rate.",
-    tech: "Spring Boot, Microservices",
-    // github: "https://github.com/ChNira2024",
+      "Developed and integrated payment gateway APIs for UAE-based banking system ensuring secure and reliable transaction processing.",
+    tech: "Java, Spring Boot, Microservices, REST APIs",
+    highlights: [
+      "Reduced payment failures by 40%",
+      "Achieved 99.9% transaction success rate",
+      "Improved API reliability and monitoring"
+    ]
   },
+
   {
-    title: "Court Case Management System",
+    title: "Court Case Management System (CCMS)",
     description:
-      "BPM-based case lifecycle system. Reduced processing time by 35%.",
-    tech: "Spring Boot, BPM",
-    // github: "https://github.com/ChNira2024",
+      "Built a BPM-based workflow system to manage legal case lifecycle including approvals, tracking, and process automation.",
+    tech: "Java, Spring Boot, BPM, Oracle",
+    highlights: [
+      "Reduced case processing time by 35%",
+      "Automated workflow approvals",
+      "Improved system traceability"
+    ]
   },
+
   {
-    title: "CI/CD & Kubernetes Deployment",
+    title: "CI/CD & Kubernetes Deployment Pipeline",
     description:
-      "Implemented CI/CD pipelines and deployed apps on AWS EKS using Docker & ArgoCD.",
-    tech: "AWS, Kubernetes, DevOps",
+      "Implemented end-to-end CI/CD pipeline and deployed containerized applications on AWS EKS using Docker and ArgoCD.",
+    tech: "AWS, Kubernetes, Docker, ArgoCD, CI/CD",
     github: "https://github.com/ChNira2024/docker-k8s-deployment",
-  },
+    highlights: [
+      "Automated deployment pipeline",
+      "Improved release efficiency",
+      "Enabled zero-downtime deployments"
+    ]
+  }
 ];
 
 export default projects;

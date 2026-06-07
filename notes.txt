@@ -1,3 +1,8 @@
+npx create-react-app portfolio
+cd portfolio
+npm start
+---------------------
+
 npm install gh-pages --save-dev
 What is this command?
 1. gh-pages: This is an npm package
@@ -70,7 +75,57 @@ You can combine build + deploy:
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build"
 }
+=>add "homepage": "https://chnira2024.github.io/portfolio", in package.json
+=>then add "deploy": "gh-pages -d build" in script in package.json
+=>then add  "gh-pages": "^6.3.0" in dependencies section
 
 Now just run:
 npm run deploy
 cleaner & professional
+
+-------------------------------------------------------
+PS C:\project\portfolio> npm install gh-pages --save-dev
+
+up to date, audited 1325 packages in 2s
+
+270 packages are looking for funding
+  run `npm fund` for details
+
+28 vulnerabilities (9 low, 6 moderate, 13 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+PS C:\project\portfolio> npm run build                                       
+
+> portfolio@0.1.0 build
+> react-scripts build
+
+Creating an optimized production build...
+Compiled successfully.
+
+File sizes after gzip:
+
+  61.36 kB  build\static\js\main.96c38a2e.js
+  469 B     build\static\css\main.3e0c61dc.css
+
+The project was built assuming it is hosted at /portfolio/.
+You can control this with the homepage field in your package.json.
+
+The build folder is ready to be deployed.
+
+Find out more about deployment here:
+
+  https://cra.link/deployment
+
+PS C:\project\portfolio> npm run deploy
+
+> portfolio@0.1.0 deploy
+> gh-pages -d build
+
+Published
+PS C:\project\portfolio>
